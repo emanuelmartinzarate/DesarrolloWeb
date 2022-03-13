@@ -4,24 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>SuperYo</title>
 </head>
 <body>
     <header>
-        <h1>Titulo Principal</h1>
-        <nav class="menu">
+        <nav>
+            <img src="img/logo.jpg" alt="Logo">
             <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Sobre nosotros</a></li>
-              <li><a href="#">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+				<li><a href="pages/productos.html">Productos</a></li>
+				<li><a href="pages/ofertas.html">Ofertas</a></li>
+				<li><a href="pages/ubicacion.html">Ubicacion</a></li>
+				<li><a href="pages/contacto.html">Contacto</a></li>
             </ul>
-          </nav>
+            <input type="text" id="buscar" placeholder="Buscar">
+            <img src="img/cart.png" alt="Carrito">
+        </nav>
     </header>
     <section>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat error et consequatur sapiente, nemo saepe aperiam deleniti autem recusandae voluptates tenetur doloribus ratione illo dolorum quidem. Nulla vero repellat debitis.</p>
-    </section>
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>Producto</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+            </tr>
+            <tr>
+                <td>Producto1</td>
+                <td>Ejemplo de descripcion</td>
+                <td>1000</td>
+                <td>Agregar al carrito</td>
+            </tr>
+            <tr>
+                <td>Producto2</td>
+                <td>Ejemplo de descripcion</td>
+                <td>1000</td>
+                <td>Agregar al carrito</td>
+            </tr>
+        </table>
+   </section>
     <footer>
-        <p>Agregar aqui accesos a las redes sociales</p>
+        <img src="img/logo.jpg" alt="Logo">
+        <h2>En esta parte vamos a agregar las redes sociales</h2>
     </footer>
 </body>
 </html>
