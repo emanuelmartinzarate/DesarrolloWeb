@@ -113,3 +113,33 @@ a{
     margin-left: 2%;
     margin-right: 2%;
 }
+
+.campos {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #8144ff;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    /* resize: vertical ; */
+  }
+
+.enviar {
+    background-color: #3c2add;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+.enviar:hover {
+    background-color: #f70bf7;
+  }
+
+.contacto{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
