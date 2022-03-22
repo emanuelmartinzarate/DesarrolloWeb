@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <title>Ofertas</title>
 </head>
 <body>
     <header>
         <nav>
-            <img src="../img/logo.jpg" alt="Logo">
+            <img class="logo" src="../img/logo.jpg" alt="Logo de SuperYo">
+            <h1>SUPERYO</h1>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-				<li><a href="productos.html">Productos</a></li>
-				<li><a href="ofertas.html">Ofertas</a></li>
-				<li><a href="ubicacion.html">Ubicacion</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="ofertas.html">OFERTAS</a></li>
+                <li><a href="ubicacion.html">UBICACION</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
-            <input type="text" id="buscar" placeholder="Buscar">
+            <input class="buscar" type="text" id="buscar" placeholder="Buscar">
             <img src="../img/cart.png" alt="Carrito">
         </nav>
     </header>
-    <section>
-        <h2>Filtrar</h2>
-        <div>
+    <main>
+        <aside class="filtros">
             <h4>Elige varias opciones</h4>
             <label for="opcion1">Opcion 1</label>
             <input type="checkbox" id="opcion1">
@@ -37,30 +42,69 @@
             <input type="checkbox" id="opcion5">
             <label for="opcion6">Opcion 6</label>
             <input type="checkbox" id="opcion6">
-        </div>
-        <table border="1" cellpadding="10">
-            <tr>
-                <th>Producto</th>
-                <th>Descripcion</th>
-                <th>Precio</th>
-                <th>Acciones</th>
-            </tr>
-            <tr>
-                <td>Producto1</td>
-                <td>Ejemplo de descripcion</td>
-                <td>1000</td>
-                <td>Agregar al carrito</td>
-            </tr>
-            <tr>
-                <td>Producto2</td>
-                <td>Ejemplo de descripcion</td>
-                <td>1000</td>
-                <td>Agregar al carrito</td>
-            </tr>
-        </table>
-   </section>
+        </aside>
+        <section class="row">
+            <div class="column">
+                <div class="card">
+                    <h3>Card 1</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3>Card 2</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+            </div>        
+            <div class="column">
+                <div class="card">
+                    <h3>Card 3</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3>Card 4</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="column">
+                <div class="card">
+                    <h3>Card 5</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3>Card 6</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+            </div>        
+            <div class="column">
+                <div class="card">
+                    <h3>Card 7</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3>Card 8</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
-        <img src="../img/logo.jpg" alt="Logo">
         <h2>En esta parte vamos a agregar las redes sociales</h2>
     </footer>
 </body>
