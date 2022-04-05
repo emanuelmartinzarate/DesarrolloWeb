@@ -1,47 +1,40 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
 body{
-    background-color: #f2f3f5;
-    font-family: Roboto;
+    display: grid;
+    grid-template-areas: "header" "menu" "main" "footer" ;
+
 }
 
 header{
+    grid-area: header;
+    text-align: center;
     background-color: #8144ff;
-    border-radius: 10px;
-    width: 100%;
-    margin-bottom: 5px;
 }
 
-h1{
-    font-size: xx-large;
+nav{
+    grid-area: menu;
     text-align: center;
-    margin: auto;
-    display: inline;
+    background-color: #8144ff;
 }
+
+main{
+    grid-area: main;
+    background-color:violet
+}
+
+footer{
+    grid-area: footer;
+    background-color:green
+}
+
 
 .logo{
     border-radius: 100px;
     display: inline;
-}
-
-main{
-    background-color:#8144ff;
-    border-radius: 10px;
-    width: 100%;
-    margin-bottom: 1%;
-    display: inline-block;
-}
-
-footer{
-    background-color: #8144ff;
-    border-radius: 10px;
-    width: 100%;
-    text-align: center;
-}
-
-ul{
-    margin-top: 0;
-    margin-bottom: 0;
-    display: inline;
-    text-align: center;
 }
 
 li{
@@ -49,14 +42,7 @@ li{
     display: inline;
     font-size: large;
     font-weight: bold;
-    padding: 1%;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.buscar{
-    display: inline;
-    border: none;
+    /* padding: 0.1%; */
 }
 
 a{
@@ -64,38 +50,37 @@ a{
 }
 
 .card {
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
     background-color: #d85959;
-    border-radius: 3%;
+    /* border-radius: 3%; */
   }
 
-  .column {
-    display: inline-block;
-    width: 20%;
-    margin-left: 2%;
-    margin-right: 2%;
+  .container-cards{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      /* grid-template-rows: 4fr; */
+      grid-gap: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
   }
-
-.row {
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
 
 .filtros{
-    float: inline-start;
-    /* display: block; */
+    display: flex;
+    flex-direction: row;
 }
 
 .ubicacion{
-    display: inline;
+    display: flex;
+    flex-direction: row;
     margin-left: 2%;
     margin-right: 2%;
 }
 
 .ubicacion__parrafo{
-    display: inline;
-    position: absolute;
+    justify-content: center;
     margin-left: 2%;
     margin-right: 2%;
     text-align: justify;
@@ -103,15 +88,9 @@ a{
 }
 
 .mapa{
-    display: inline;
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 2%;
-}
-
-.tituloUbicacion{
-    margin-left: 2%;
-    margin-right: 2%;
 }
 
 .campos {
@@ -143,3 +122,16 @@ a{
     background-color: #f2f2f2;
     padding: 20px;
 }
+
+@media only screen and (max-width: 850px) {
+    .ubicacion {
+        flex-direction: column;
+        text-align: center;
+    }
+    .container-cards{
+        grid-template-columns: 1fr;
+    }
+    li{
+        display: block;
+    }
+  }
