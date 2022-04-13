@@ -5,30 +5,33 @@
 
 body{
     display: grid;
-    grid-template-areas: "header" "menu" "main" "footer" ;
-
+    grid-template-areas: 
+    "menu menu" 
+    "main main" 
+    "footer footer" ;
+    background-color: #60bb9a;
 }
 
 header{
     grid-area: header;
     text-align: center;
-    background-color: #8144ff;
+    
 }
 
 nav{
     grid-area: menu;
-    text-align: center;
-    background-color: #8144ff;
+    background-color: #60bb9a;
 }
 
 main{
     grid-area: main;
-    background-color:violet
+    background-color:#edef8c;
 }
 
 footer{
     grid-area: footer;
-    background-color:green
+    text-align: center;
+    background-color:#60bb9a;
 }
 
 
@@ -42,30 +45,30 @@ li{
     display: inline;
     font-size: large;
     font-weight: bold;
-    /* padding: 0.1%; */
 }
 
 a{
     text-decoration: none;
 }
 
-.card {
-    /* padding: 10px; */
-    text-align: center;
-    background-color: #d85959;
-    /* border-radius: 3%; */
-  }
+.container-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
-  .container-cards{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      /* grid-template-rows: 4fr; */
-      grid-gap: 1rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      padding-left: 1rem;
-      padding-right: 1rem;
-  }
+.card {
+    text-align: center;
+}
+
+.card:hover{
+    transform: scale(1.04) ;
+    opacity: .6;
+}
 
 .filtros{
     display: flex;
@@ -91,17 +94,17 @@ a{
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 2%;
+    margin-top: 2%;
 }
 
 .campos {
     width: 100%; 
     padding: 12px; 
-    border: 1px solid #8144ff;
+    border: 1px solid #714f9b;
     border-radius: 4px; 
     box-sizing: border-box; 
     margin-top: 6px; 
     margin-bottom: 16px; 
-    /* resize: vertical ; */
   }
 
 .enviar {
