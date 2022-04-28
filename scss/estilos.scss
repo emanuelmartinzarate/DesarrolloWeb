@@ -3,25 +3,30 @@
     padding: 0;
 }
 
+$color-body:#60bb9a;
+$color-nav:#60bb9a;
+$color-main:#714f9b;
+$color-footer:#60bb9a;
+
 body{
     display: grid;
     grid-template-areas: 
     "menu menu" 
     "main main" 
     "footer footer" ;
-    background-color: #60bb9a;
+    background-color: $color-body;
     nav{
         grid-area: menu;
-        background-color: #60bb9a;
+        background-color: $color-nav;
     }
     main{
         grid-area: main;
-        background-color:#714f9b;
+        background-color:$color-main;
     }
     footer{
         grid-area: footer;
         text-align: center;
-        background-color:#60bb9a;
+        background-color:$color-footer;
     }
 }
 
@@ -36,8 +41,8 @@ body{
 }
 
 .products-img{
-    width: 20rem;
-    height: 20rem;
+    width: 100%;
+    height: 100%;
 }
 
 .container-cards{
@@ -52,7 +57,7 @@ body{
 
 .card {
     text-align: center;
-    width: 20rem;
+    width: 100%;
     &:hover{
         transform: scale(1.04) ;
         opacity: .6;
