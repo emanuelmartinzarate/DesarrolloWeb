@@ -3,10 +3,13 @@
     padding: 0;
 }
 
-$color-body:#60bb9a;
-$color-nav:#60bb9a;
-$color-main:#714f9b;
-$color-footer:#60bb9a;
+$colores: (
+    color-body:#60bb9a,
+    color-nav:#60bb9a,
+    color-main:#714f9b,
+    color-footer:#60bb9a
+);
+
 
 body{
     display: grid;
@@ -14,19 +17,19 @@ body{
     "menu menu" 
     "main main" 
     "footer footer" ;
-    background-color: $color-body;
+    background-color: map-get($colores,color-body);
     nav{
         grid-area: menu;
-        background-color: $color-nav;
+        background-color: map-get($colores,color-nav);
     }
     main{
         grid-area: main;
-        background-color:$color-main;
+        background-color: map-get($colores,color-main);
     }
     footer{
         grid-area: footer;
         text-align: center;
-        background-color:$color-footer;
+        background-color: map-get($colores,color-footer);
     }
 }
 
