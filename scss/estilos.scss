@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding: 0;
+    font-family: 'Bangers';
 }
 
 $colores: (
@@ -21,6 +22,9 @@ body{
     nav{
         grid-area: menu;
         background-color: map-get($colores,color-nav);
+        .nav-item{
+            font-size: 40px;
+        }
     }
     main{
         grid-area: main;
@@ -67,7 +71,24 @@ body{
     }
 }
 
+.kitDescription{
+    font-size: 30px;
+    li{
+        list-style-type:none;
+    }
+}
 
+.bi-instagram:hover{
+    transform: scale(1.05) ;
+}
+
+.bi-facebook:hover{
+    transform: scale(1.05) ;
+}
+
+.bi-whatsapp:hover{
+    transform: scale(1.05) ;
+}
 
 .ubicacion{
     display: flex;

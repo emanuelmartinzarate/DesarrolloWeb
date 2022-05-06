@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Bangers'; }
 
 body {
   display: grid;
@@ -9,6 +10,8 @@ body {
   body nav {
     grid-area: menu;
     background-color: #60bb9a; }
+    body nav .nav-item {
+      font-size: 40px; }
   body main {
     grid-area: main;
     background-color: #714f9b; }
@@ -44,6 +47,20 @@ body {
   .card:hover {
     transform: scale(1.04);
     opacity: .6; }
+
+.kitDescription {
+  font-size: 30px; }
+  .kitDescription li {
+    list-style-type: none; }
+
+.bi-instagram:hover {
+  transform: scale(1.05); }
+
+.bi-facebook:hover {
+  transform: scale(1.05); }
+
+.bi-whatsapp:hover {
+  transform: scale(1.05); }
 
 .ubicacion {
   display: flex;
